@@ -57,3 +57,7 @@ dist/
 .pad-e2e/
 web/playwright-report/
 web/test-results/
+
+# complete-e2e campaign state (local)
+.hurc-harness/
+pad-ce2e-bin
