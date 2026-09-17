@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parents[2]
 def main() -> int:
     a = set(sys.argv[1:])
     if a & {"-h", "--help"}:
+        # [ai] complete-e2e cli-contract requires observable usage/help text + exit 0.
+        print("usage: prove.py [--help] [--version]")
         print("pad-prove: wraps scripts/complete-e2e/run.py live product proofs")
         return 0
     if a & {"-V", "--version"}:
